@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/card.css">
-    <script src="src/components/cardNews.js" defer></script>
+    <script src="src/components/CardNews.js"       defer></script>
+    <script src="src/components/TituloDinamico.js" defer></script>
     <title>Portal de noticias galatico</title>
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card_left">
-                <span>Leonardo Padilha Fontana</span>
-                <a href="#">Vader contrata devs</a>
-                <p>Darth Vader procura desenvolvedores que trabalham com componetização</p>
-            </div>
-            <div class="card_right">
-                <img src="/desafio01/assets/vader.jpg" alt="">
-            </div>
-            <card-news></card-news>
-        </div>
+        <card-news 
+            autor=""
+            title="Darth Vader contrata"
+            content="Darth Vader procura desenvolvedores que trabalham com componetização"
+            link-url="www.google.com"
+            photo="/desafio01/assets/vader.jpg"
+            >
+        </card-news>
+        <card-news 
+            autor="Eduardo"
+            title="Comprem mais bolinhos"
+            content="Descontão na quinta é dia de bolinho!"
+            link-url="www.google.com"
+            photo="/desafio01/assets/bolinho.webp"
+            >
+        </card-news>
+        <card-news 
+            autor="Flavio"
+            title="Chega de fonte do Douglas"
+            content="Aquele calveludo me quebra"
+            link-url="www.google.com"
+            photo="/desafio01/assets/serjao.jpeg"
+            >
+        </card-news>
     </div>
 </body>
 </html>
